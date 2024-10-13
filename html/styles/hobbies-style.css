@@ -1,0 +1,142 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins' , sans-serif;
+    color: #fffbfb;
+    background: linear-gradient(180deg, #0E141C 0%, #0A0F14 100%);
+}
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+.logo {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav-button {
+    display: none;
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+
+}
+.nav-link.active {
+    color: #979797;
+}
+.hobbies {
+    padding: 90px 0;
+    background: #ffffff;
+}
+.hobbies-row {
+    display: flex;
+    column-gap: 30px;
+    color: #000;
+}
+.hobbies-card {
+
+}
+.hobbie-img {
+    margin-bottom: 30px;
+}
+.hobbie {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.hobbies-card p {
+    color: #838080;
+    line-height: 2;
+}
+
+.dombyra-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.dombyra-content {
+    max-width: 530px;
+    margin: 124px auto;
+    
+}
+
+.dombyra-heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.dombyra-content p {
+    line-height: 2;
+    color: #838080;
+}
+.dombyra-img {
+    margin-bottom: 80px;
+}
+footer {
+    text-align: center;
+}
+@media (max-width:1230px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    .nav.open .nav-list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #2a3b53;
+        z-index: 1;
+        padding: 46x 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-weight: 600;
+    }
+    .nav-button {
+        position: fixed;
+        z-index: 9;
+        top: 46px;
+        right: 30px;
+    }
+    .hobbies-row {
+        display: flexbox;
+    }
+    .header-nav {
+        margin-bottom: 50px;
+    }
+    .dombyra-row {
+        flex-direction: column;
+    }
+    .dombyra-content {
+        margin-top: 0;
+    }
+    .dombyra-img {
+        text-align: center;
+    }
+}
+@media (max-width:760px) {
+    .hobbies-row {
+        display: block;
+        margin-top: 20px;
+    }
+}

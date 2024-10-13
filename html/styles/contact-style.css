@@ -1,0 +1,178 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins' , sans-serif;
+    color: #fffbfb;
+    background: linear-gradient(180deg, #0E141C 0%, #0A0F14 100%);
+}
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+.logo {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav-button {
+    display: none;
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+
+}
+.nav-link.active {
+    color: #979797;
+}
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+.contacts-title {
+    margin-bottom: 40px;
+}
+.contacts-content {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.contacts-button {
+    margin-bottom: 80px;
+}
+.btn {
+    color: white;
+    background-color: rgb(49, 133, 133);
+    display: inline-block;
+    padding: 7px 22px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.btn:hover, .btn:focus {
+    background-color: #2a3b53;
+}
+.btn:active {
+    background-color: #000;
+}
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+}
+.contacts-footer {
+    color: #b6b6b6;
+    font-size: 14px;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group {
+    display: flex;
+    gap: 20px;
+}
+
+.group.full-width {
+    flex-direction: column;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.group label {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #f5f1ed;
+}
+
+.group input,
+.group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #f5f1ed;
+    font-size: 16px;
+}
+
+.group input::placeholder,
+.group textarea::placeholder {
+    color: #9a9a9a;
+}
+
+.group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit {
+    background-color: #324571;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+@media (max-width:1230px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    .nav.open .nav-list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #2a3b53;
+        z-index: 1;
+        padding: 46x 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-weight: 600;
+    }
+    .nav-button {
+        position: fixed;
+        z-index: 9;
+        top: 46px;
+        right: 30px;
+    }
+}

@@ -1,0 +1,75 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins' , sans-serif;
+    color: #fffbfb;
+    background: linear-gradient(180deg, #0E141C 0%, #0A0F14 100%);
+}
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 34px;
+    font-weight: 500;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+.logo {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav-button {
+    display: none;
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+
+}
+.nav-link.active {
+    color: #979797;
+}
+.header-row {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+.header-content {
+    display: block;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.edu.img {
+margin-bottom: 40px;
+}
+.info {
+    line-height: 2;
+    color: #9b9b9b;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width:1230px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    
+}
